@@ -1,0 +1,28 @@
+{
+  "$schema": "../../assetlist.schema.json",
+  "chain_name": "gotabittestnet",
+  "assets": [
+    {
+      "description": "The native staking and governance token of the testnet version of GotaBit.",
+      "denom_units": [
+        {
+          "denom": "ugtb",
+          "exponent": 0
+        },
+        {
+          "denom": "GTB",
+          "exponent": 6
+        }
+      ],
+      "base": "ugtb",
+      "name": "GTB",
+      "display": "gtb",
+      "symbol": "GTB",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/gotabittestnet/images/gtb.png",
+        "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/gotabittestnet/images/svg.png"
+
+      }
+    }
+  ]
+}

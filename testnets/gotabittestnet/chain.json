@@ -1,0 +1,97 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "gotabittestnet",
+  "status": "live",
+  "network_type": "testnet",
+  "website": "https://gotabit.io",
+  "pretty_name": "GotaBit Testnet",
+  "chain_id": "gotabit-testnet-1",
+  "bech32_prefix": "gio",
+  "slip44": 118,
+  "daemon_name": "gotabitd",
+  "node_home": "$HOME/.gotabit",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "ugtb",
+        "fixed_min_gas_price": 0
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "ugtb"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/gotabit/gotabit",
+    "recommended_version": "v1.0.1",
+    "compatible_versions": [
+      "v1.0.1"
+    ],
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/gotabit/networks/main/gotabit-test-1/genesis.json.gz"
+    },
+    "versions": [
+      {
+        "name": "v1.0.1",
+        "recommended_version": "v1.0.1",
+        "compatible_versions": [
+          "v1.0.1"
+        ]
+      }
+    ]
+  },
+  "peers": {
+    "seeds": [
+      {
+        "id": "nodeid",
+        "address": "xxx.xxx.xxx:26656"
+      }
+    ],
+    "persistent_peers": [
+      {
+        "id": "nodeid",
+        "address": "x.x.x.x:26656",
+        "provider": "GotaBit"
+      }
+    ]
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc-testnet.gotabit.dev",
+        "provider": "GotaBit"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://rest-testnet.gotabit.dev",
+        "provider": "GotaBit"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "https://rpc-testnet.gotabit.dev",
+        "provider": "GotaBit"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "ping.pub",
+      "url": "https://explorer.gotabit.dev",
+      "tx_page": "https://explorer.gotabit.dev/gotabit-test/tx/${txHash}"
+    },
+    {
+      "kind": "Big Dipper",
+      "url": "https://scan-testnet.gotabit.dev",
+      "tx_page": "https://scan-testnet.gotabit.dev/transactions/{txHash}"
+    }
+  ]
+}
